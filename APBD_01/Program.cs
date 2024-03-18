@@ -21,7 +21,7 @@ public class Program
         Console.WriteLine(max(nums));
 
     }
-
+    
     public static float average(int[] another_numbers)
     {
         float result = 0f;
@@ -31,6 +31,7 @@ public class Program
         }
 
         return result / another_numbers.Length;
+
     }
 
     public static int max(int[] nums)
