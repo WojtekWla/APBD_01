@@ -11,11 +11,14 @@ public class Program
         //
         // Console.WriteLine(num1 + num2);
         // Console.WriteLine(num1 - num2);
-        
+
         //Task 2
-        int[] nums = new int[] {1,2,4,4,5};
-        Console.WriteLine(average(nums));
+        // int[] nums = new int[] { 1, 2, 4, 4, 5 };
+        // Console.WriteLine(average(nums));
         
+        //Task 3
+        int[] nums = new int[] { 5, 4, 1, 2 };
+        Console.WriteLine(max(nums));
 
     }
 
@@ -29,6 +32,18 @@ public class Program
 
         return result / nums.Length;
     }
-    
+
+    public static int max(int[] nums)
+    {
+        int max = nums[0];
+        for (int i = 1; i < nums.Length; i++)
+        {
+            if (nums[i] > max) max = nums[i];
+        }
+
+        return max;
+    }
+
+
 }
 
