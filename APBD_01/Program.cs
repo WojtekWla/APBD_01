@@ -22,15 +22,15 @@ public class Program
 
     }
 
-    public static float average(int[] nums)
+    public static float average(int[] another_numbers)
     {
         float result = 0f;
-        for (int i = 0; i < nums.Length; i++)
+        for (int i = 0; i < another_numbers.Length; i++)
         {
-            result += nums[i];
+            result += another_numbers[i];
         }
 
-        return result / nums.Length;
+        return result / another_numbers.Length;
     }
 
     public static int max(int[] nums)
